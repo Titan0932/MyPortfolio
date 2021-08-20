@@ -47,6 +47,9 @@ sr.reveal('.skills-subtitle',{delay:100})
 sr.reveal('.skills-text',{delay:300})
 sr.reveal('.skills-names',{interval:100})
 
+sr.reveal('.education-rounder',{interval:200})
+sr.reveal('.education-line',{interval:200})
+
 const sr2=ScrollReveal({
     origin:'left',
     distance:'80px',
@@ -57,8 +60,13 @@ const sr2=ScrollReveal({
 sr2.reveal('.section-title',{})
 sr2.reveal('.experience-each',{interval:100})
 
+sr.reveal('.education-year',{interval:200})
+sr.reveal('.education-school',{interval:200})
+
+
+
 const sr3=ScrollReveal({
-    origin:'center',
+    origin:'right',
     distance:'110px',
     duration:2000,
     reset:true
@@ -68,6 +76,9 @@ sr3.reveal('.section-title',{})
 sr3.reveal('.contact-input',{interval:200})
 sr3.reveal('.Submit-button',{delay:100})
 
+
+sr.reveal('.education-boards',{interval:200})
+sr.reveal('.education-grades',{interval:200})
 
 
 
