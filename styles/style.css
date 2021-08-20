@@ -12,6 +12,7 @@
     --body-font: 'Oswald', sans-serif;
     --big-font-size:2.5rem;
     --h2-font-size:2rem;
+    --h3-font-size:1.7rem;
     --normal-font-size:1.5rem;
 
     --mb-1:0.5rem;
@@ -326,7 +327,7 @@ section{
   grid-template-rows: auto auto;
   font-size: 1rem;
   overflow: hidden;
-  padding: 1rem;
+  
 }
 .experience-each:hover{
   box-shadow: 0 4px 25px hsl(129, 65%, 49%);
@@ -342,9 +343,71 @@ section{
 
 .experience-details{
   overflow: hidden;
+  padding: 1rem;
+}
+
+.experience-points li::before {
+  content: "\2022";  /*  \2022 is the CSS Code/unicode for a bullet */
+  color: var(--main-color);
+  font-weight: bolder;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
 }
 
 
+
+.education-container{
+  row-gap: 2rem;
+}
+.education-content{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+.education-year,.education-boards{
+  margin-bottom: 0.25rem;
+}
+.education-school, .education-grades{
+  display: block;
+  font-size: 1rem;
+}
+.education-grades, .education-boards{
+  color: var(--main-color);
+}
+
+.education-year,.education-school{
+  text-align: right;
+}
+.education-time{
+  padding:0 1rem;
+  justify-self:center;
+}
+.education-rounder{
+  position:relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.education-rounder::before{
+  content: '';
+  position: absolute;
+  transform:translate(-4px,-4px);
+  width:20px;
+  height:20px;
+  border: 1px solid var(--secondary-color);
+
+  border-radius: 50%;
+}
+
+.education-line{
+  display: block;
+  height: 50%;
+  width:2px;
+  background-color: var(--secondary-color);
+  transform: translate(5px,0);
+}
  
 .contact-input{
   width: 100%;
@@ -387,14 +450,27 @@ section{
   background-color: var(--secondary-color);
   padding:1rem 0;
   text-align: center;
+  height: 8rem;
   
 }
 .footer-title{
     color:ivory;
 }
+
+.footer-social-icon{
+  color: ivory;
+  margin-right: 0.5rem;
+}
+
+.footer-social-icon:hover{
+  color:var(--main-color)
+
+}
+
 .footer-copyright{
   color:ivory;
-  font-size: 1rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
 }
 
 
