@@ -43,7 +43,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color:var(--secondary-color);
-    overflow-x: hidden;
+    
 }
 
 h1,h2,p{
@@ -91,6 +91,7 @@ img{
 section{
     padding-top: 5rem;
     padding-bottom: 2rem;
+    
     
 }
 
@@ -344,29 +345,26 @@ section{
 }
 
 
-
-
+ 
 .contact-input{
-  width:110%;
+  width: 100%;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--main-color);
-  text-align: center;
-  
+  border: 2px solid var(--main-color);  
+  outline:none;
+  margin-bottom: 1rem;
 }
+ 
 
-#contact-form{
-  display: grid;
-  justify-content: center;
-}
 
 .Submit-button{
+  
   display: block;
   border-radius: 0.2rem;
   box-shadow: 0 0 5px hsl(215, 84%, 35%);
   transition: 0.5s;
-  width: 110%;
+  width: 50%;
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -375,12 +373,12 @@ section{
 }
 
 .Submit-button:hover{
-
+  width: 90%;
     background-color: var(--main-color);
     transition: 0.5s;
     color: ivory;
 
-}
+} 
 
 .footer{
   width: 100%;
@@ -406,12 +404,16 @@ section{
       --h2-font-size: 2.5rem;
       --normal-font-size: 1.5rem;
     }
-    *,body{
+    body{
       margin: 0;
-    }
+        }
 
       .home{
         height: 100vh;
+      }
+
+      .home-data{
+        align-self:flex-end;
       }
 
     .home.bd-grid{
@@ -422,13 +424,14 @@ section{
       position: absolute;
       max-width:22rem;
       right: 4%;
+     
     }
-
-
 
     .experience-each{
       display:grid;
       grid-template-columns: auto auto; 
+      margin:0;
+      padding: 0;
     }
 
 
@@ -438,8 +441,30 @@ section{
       align-items: center;
     }
 
+    .section{
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .section-title{
+      margin-bottom: var(--mb-5);
+    }
+    .section-title::after{
+      width:80px;
+      top:5rem;
+    }
+
     form{
-      width:100%;
+      width:400px;
+     
+  }
+
+  .contact-container{
+    
+    width: 400px;
+  }
+  .contact-input{
+    width:400px
   }
   }
 
@@ -449,9 +474,12 @@ section{
     position: absolute;
     max-width:22rem;
     right: 15%;
+    bottom:15%;
   }
   .nav-logo img{
-    margin-left: 20rem;  }
+    margin-left: 20rem;  
+  }
+
   .nav{
     height: var(--header-height) 
   }
