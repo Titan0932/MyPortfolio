@@ -45,7 +45,9 @@ sr.reveal('.about-text',{delay:300})
 sr.reveal('.section-title',{})
 sr.reveal('.skills-subtitle',{delay:100})
 sr.reveal('.skills-text',{delay:300})
-sr.reveal('.skills-names',{interval:100})
+sr.reveal('.skills-names',{interval:150})
+
+
 
 sr.reveal('.education-rounder',{interval:200})
 sr.reveal('.education-line',{interval:200})
@@ -64,21 +66,40 @@ sr.reveal('.education-year',{interval:200})
 sr.reveal('.education-school',{interval:200})
 
 
+sr2.reveal('.section-title',{})
+sr2.reveal('.contact-input',{interval:200})
+sr2.reveal('.Submit-button',{delay:100})
 
+
+var win= window.screen.width;
+
+if(win>=1290){
 const sr3=ScrollReveal({
     origin:'right',
-    distance:'110px',
+    distance:'80px',
     duration:2000,
     reset:true
 })
+sr3.reveal('.education-boards',{interval:200})
+sr3.reveal('.education-grades',{interval:200})
 
-sr3.reveal('.section-title',{})
-sr3.reveal('.contact-input',{interval:200})
-sr3.reveal('.Submit-button',{delay:100})
+}
+else{
+    const sr3=ScrollReveal({
+    origin:'bottom',
+    distance:'80px',
+    duration:2000,
+    reset:true
+})
+    sr3.reveal('.education-boards',{interval:200})
+sr3.reveal('.education-grades',{interval:200})
+    
+}
 
 
-sr.reveal('.education-boards',{interval:200})
-sr.reveal('.education-grades',{interval:200})
+
+
+
 
 
 
