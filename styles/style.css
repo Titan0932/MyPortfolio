@@ -201,6 +201,7 @@ section{
 }
 #change-theme{
   transform: translate(5px,5px);
+  cursor: pointer;
 }
 
 #change-theme:hover{
