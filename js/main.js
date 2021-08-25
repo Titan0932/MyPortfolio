@@ -97,12 +97,58 @@ sr3.reveal('.education-grades',{interval:200})
 }
 
 
+const themeButton=document.getElementById('change-theme')
+const iconTheme= 'bxs-sun'
+const darkTheme='dark-theme'
+
+const selectedTheme= localStorage.getItem('selected-theme')
+const selectedIcon=localStorage.getItem('selected-icon')
+
+const getCurTheme= () => {
+        if (document.body.classList.contains(darkTheme)){
+            return 'dark-theme'
+        } 
+        else{
+            return 'light-theme'
+        }
+        }
+
+const getCurIcon= () => {
+        if (themeButton.classList.contains(iconTheme)){
+            return 'bxs-sun'
+        } 
+        else{
+            return 'bxs-moon'
+        }
+        }
+
+if (selectedTheme){
+    
+    
+    if(selectedIcon === 'bxs-moon'){ 
+        change_icon= 'add'}
+    else{
+        change_icon= 'remove'}
+                      
+    themeButton.classList[change_icon](iconTheme);
+    
+    if(selectedTheme === 'dark-theme'){
+        change_theme= 'add'} 
+    else{   
+        change_theme= 'remove'};
+                     
+    document.body.classList[change_theme](darkTheme)
+
+}
+    
 
 
 
+themeButton.addEventListener('click', () =>{
 
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
 
-
-
-
-
+        localStorage.setItem('selected-theme',getCurTheme())
+        localStorage.setItem('selected-icon', getCurIcon()) 
+})
