@@ -39,7 +39,7 @@ body.dark-theme{
   --main-color:hsl(215, 82%, 40%);
   --secondary-color:hsl(129, 73%, 42%);
   --bg-color:hsl(131, 95%, 8%);
-  --p-color:ivory;
+  --p-color:rgb(157, 148, 148);
   --white-black-color:black;
 
 }
