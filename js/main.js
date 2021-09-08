@@ -29,44 +29,48 @@ navLink.forEach(n=> n.addEventListener('click',linkAction))
 const sr=ScrollReveal({
     origin:'top',
     distance:'80px',
-    duration:2000,
-    reset:true
+    duration:2200,
+    reset:false
 })
 
+sr.reveal('.section-title',{})
 sr.reveal('.home-title',{})
 sr.reveal('.button',{delay:100})
-sr.reveal('.home-img',{delay:300})
-sr.reveal('.home-social-icon',{interval:100})
+sr.reveal('.home-img',{delay:400})
+sr.reveal('.home-social-icon',{interval:150})
 
-sr.reveal('.section-title',{})
-sr.reveal('.about-img',{delay:100})
-sr.reveal('.about-text',{delay:300})
 
-sr.reveal('.section-title',{})
+sr.reveal('.about-img',{})
+sr.reveal('.about-text',{delay:400})
+
+/* sr.reveal('.section-title',{delay:100}) */
 sr.reveal('.skills-subtitle',{delay:100})
-sr.reveal('.skills-text',{delay:300})
-sr.reveal('.skills-names',{interval:150})
+sr.reveal('.skills-text',{delay:400})
+sr.reveal('.skills-names',{delay:200,interval:300})
 
 
-
-sr.reveal('.education-rounder',{interval:200})
-sr.reveal('.education-line',{interval:200})
+/* sr.reveal('.section-title',{delay:100}) */
+sr.reveal('.education-rounder',{delay:100,interval:200})
+sr.reveal('.education-line',{delay:100,interval:200})
 
 const sr2=ScrollReveal({
     origin:'left',
     distance:'80px',
-    duration:2000,
-    reset:true
+    duration:2500,
+    reset:false
 })
 
-sr2.reveal('.section-title',{})
+/* sr.reveal('.section-title',{delay:100}) */
 sr2.reveal('.experience-each',{interval:100})
 
-sr.reveal('.education-year',{interval:200})
-sr.reveal('.education-school',{interval:200})
+/* sr.reveal('.section-title',{delay:100}) */
+sr2.reveal('.education-year',{interval:200})
+sr2.reveal('.education-school',{interval:200})
 
+/* sr.reveal('.section-title',{delay:100}) */
+sr2.reveal('.project',{delay:100,interval:200})
 
-sr2.reveal('.section-title',{})
+/* sr.reveal('.section-title',{delay:100}) */
 sr2.reveal('.contact-input',{interval:200})
 sr2.reveal('.Submit-button',{delay:100})
 
@@ -77,8 +81,8 @@ if(win>=1290){
 const sr3=ScrollReveal({
     origin:'right',
     distance:'80px',
-    duration:2000,
-    reset:true
+    duration:2500,
+    reset:false
 })
 sr3.reveal('.education-boards',{interval:200})
 sr3.reveal('.education-grades',{interval:200})
@@ -89,12 +93,26 @@ else{
     origin:'bottom',
     distance:'80px',
     duration:2000,
-    reset:true
+    reset:false
 })
     sr3.reveal('.education-boards',{interval:200})
-sr3.reveal('.education-grades',{interval:200})
+    sr3.reveal('.education-grades',{interval:200})
     
 }
+
+
+
+const proj1=document.getElementsByClassName('proj1')
+const proj2=document.getElementsByClassName('.proj2')
+const proj3=document.getElementsByClassName('.proj3')
+const proj4=document.getElementsByClassName('.proj4')
+
+const vid1=document.getElementById('video1')
+const vid2=document.getElementById('video2')
+const vid3=document.getElementById('video3')
+const vid4=document.getElementById('video4')
+
+
 
 
 const themeButton=document.getElementById('change-theme')
@@ -152,3 +170,11 @@ themeButton.addEventListener('click', () =>{
         localStorage.setItem('selected-theme',getCurTheme())
         localStorage.setItem('selected-icon', getCurIcon()) 
 })
+
+function video1(){var media1 = document.createElement('video');
+  media1.preload = true;
+  media1.id = 'media1'; 
+  document.getElementsByClassName('proj1')[0].appendChild(media1)
+return media1}
+
+
