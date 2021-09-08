@@ -26,6 +26,10 @@
     --z-fixed:100;
 }
 
+html.sr .load-hidden{
+  visibility: hidden;
+}
+
 body{
 
     --main-color:hsl(215, 84%, 35%);
@@ -39,7 +43,7 @@ body.dark-theme{
   --main-color:hsl(215, 82%, 40%);
   --secondary-color:hsl(129, 73%, 42%);
   --bg-color:hsl(131, 95%, 8%);
-  --p-color:rgb(157, 148, 148);
+  --p-color:rgb(216, 212, 212);
   --white-black-color:black;
 
 }
@@ -88,7 +92,7 @@ img{
     position:relative;
     font-size: var(--h2-font-size);
     color:var(--main-color);
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-3);
     margin-bottom: var(--mb-4);
     text-align: center;
 }
@@ -106,9 +110,7 @@ img{
 
 section{
     padding-top: var(--header-height);
-    padding-bottom: 1.5rem;
-    
-    
+    padding-bottom: 1.5rem;  
 }
 
 .bd-grid{
@@ -329,7 +331,6 @@ section{
 
 .experience-section{
   text-align: center;
-  
 
 }
 .experience-container{
@@ -431,6 +432,80 @@ section{
   transform: translate(5px,0);
 }
  
+
+/* ------------------------------------------------------ */
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+.projects-container a{
+ text-decoration: none;
+ color: ivory;
+}
+
+
+ .project{
+     position: relative;
+     width: 60%;
+     padding: 0;
+     margin: 0;
+     background-color: grey;
+ }
+
+ .project img{
+  width: 100%;
+  align-self: center;
+  min-height: 10rem;
+ }
+
+
+.overlay{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.4);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0.5rem;
+   text-align: center;
+
+}
+.img-title{
+   padding: 0.5rem;
+}
+
+
+
+
+.overlay-desc{
+ font-size: smaller;
+}
+
+
+.projects-section .Submit-button{
+  display: flex;
+  justify-content: center;
+  justify-self:center;
+  margin-top: 3rem;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.projects-section .Submit-button a:hover{
+  color: ivory;
+}
+
+/* ---------------------------------------------------------------- */
+
 form{
 	margin:0;
 	padding:0;
@@ -568,12 +643,42 @@ form{
   }
 
   .contact-container{
-    
     width: 400px;
   }
   .contact-input{
     width:400px
   }
+
+  
+  .projects-section button{
+    display: flex;
+    align-items: center;
+  }
+
+  .overlay{
+    opacity: 0; 
+}
+
+.overlay-blur{
+  backdrop-filter: blur(3px);
+
+}
+ .overlay > *{
+      transform: translateY(40px);
+      transition: 0.5s;
+ } 
+.overlay:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.overlay:hover > *{
+
+  transform:translateY(0);
+
+}
+
+
   }
 
 
@@ -585,6 +690,7 @@ form{
     right: 4%;
    bottom:4rem;
   }
+ 
 }
 
 @media screen and (min-width: 1296px) {
@@ -596,7 +702,7 @@ form{
     bottom:15%;
   }
   .nav-logo img{
-    margin-left: 25rem;  
+    margin-left: 21rem;  
   }
   
   .nav-logo img:hover{
@@ -625,6 +731,7 @@ form{
       display: none;
     }
 
+    
     
 }
 
