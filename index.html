@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='sr load-hidden'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjish's Portfolio</title>
 
-    <link href='styles/style.css' rel="stylesheet">
+    <link href='static/styles/style.css' rel="stylesheet">
     <!--Box-icon fonts-->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     
@@ -30,6 +30,7 @@
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -62,7 +63,7 @@
                 </div>
 
                 <div class="home-img">
-                    <img src="images/me.png" alt="Me">
+                    <img src="static/images/me.png" alt="Me">
                 </div>
         </section>
 
@@ -71,7 +72,7 @@
 
             <div class="about-container bd-grid">
                 <div class="about-img">
-                    <img src="images/sample2.JPG" alt='Me'>
+                    <img src="static/images/sample2.JPG" alt='Me'>
                 </div>
                 <div class="about-subtitle">
                     <p class='about-text'> 
@@ -227,8 +228,27 @@
 
             <div class="education-content">
                 <div>
+                    <h3 class="education-year">2018-2021</h3>
+                    <span class="education-school">Rato Bangala School</span> 
+                </div>
+
+                <div class="education-time">
+                    <span class="education-rounder"></span>
+                    <span class="education-line"></span>
+                </div>
+
+                <div>
+                    <h3 class="education-boards"> GCE A-levels </h3>
+                    <span class="education-grades"> A* A* A A</span>
+                    
+                </div>
+            </div>
+
+            <div class="education-content">
+                <div>
                     <h3 class="education-year">2008-2018</h3>
                     <span class="education-school">Gems School</span>
+                    
                 </div>
 
                 <div class="education-time">
@@ -240,28 +260,71 @@
                     <h3 class="education-boards">SEE </h3>
                     <span class="education-grades">A* A* A* A* A* A* A* A* A A </span>
                 </div>
-            </div>
-
-            <div class="education-content">
-                <div>
-                    <h3 class="education-year">2018-2021</h3>
-                    <span class="education-school">Rato Bangala School</span>
-                </div>
-
-                <div class="education-time">
-                    <span class="education-rounder"></span>
-                    <span class="education-line"></span>
-                </div>
-
-                <div>
-                    <h3 class="education-boards"> GCE A-levels </h3>
-                    <span class="education-grades"> A* A* A A</span>
-                </div>
 
             </div>
         </section>
 
 
+        <section class="projects-section" id='projects'>
+            <h2 class="section-title"> Projects</h2>
+
+            <div class="projects-container bd-grid">
+                <div class='project'>
+                    <a href='https://github.com/Titan0932/Meme-generator' target="_blank"> 
+                    <img  src="static/images/proj/meme.jpg" alt="Reddit Meme-generator">
+                <div class="overlay overlay-blur">   
+                    <div class="img-title">
+                        <h2 class='project-header'>Reddit Meme Generator</h2> 
+                    </div>
+                </div>
+            </a>
+                </div>
+
+            <!-- ---------------------------------------------------------------------- -->
+
+            <div class='project'>
+                    <a href='https://github.com/Titan0932/Python-Text-Encrypter' target="_blank"> 
+                    <img  class='proj' src="static/images/proj/encryptor.jpg" alt="Text-Encrypter">
+                <div class="overlay overlay-blur">
+                  
+                    <div class="img-title">
+                        <h2 class='project-header'> Text Encryptor/ Decryptor</h2> 
+                    </div>
+                </div>
+            </a>
+                </div>
+
+            <!-- ---------------------------------------------------------------------- -->
+
+            <div class='project'>
+                    <a href='https://github.com/Titan0932/Irrigation_Forecaster' target="_blank"> 
+                    <img  class='proj' src="static/images/proj/irrigation.jpg" alt="Irrigation_Forecaster">
+                <div class="overlay overlay-blur">
+                  
+                    <div class="img-title">
+                        <h2 class='project-header'>Irrigation Forecaster</h2> 
+                    </div>
+                </div>
+            </a>
+                </div>
+
+            <!-- ---------------------------------------------------------------------- -->
+
+            <div class='project'>
+                    <a href='https://github.com/Titan0932/Screen_time_alarm' target="_blank"> 
+                    <img  class='proj' src="static/images/proj/screen.jpg" alt="Screen_time_alarm">
+                <div class="overlay overlay-blur">
+                    <div class="img-title">
+                        <h2 class='project-header'>Screen Time Alarm</h2> 
+                    </div>
+                </div>
+            </a>
+                </div>
+
+            <!-- ---------------------------------------------------------------------- -->
+            </div>
+            <button class="Submit-button"> <a href='projects2.html' target="_blank" style="text-decoration: none;"> See More!</a> </button>
+        </section> 
 
 
        <section class="contact-section" id='contact'>
