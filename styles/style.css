@@ -569,6 +569,9 @@ form{
   width: 45%;
   height: 2.5rem;
 }
+#more-projects{
+      width:100%;
+}
 
 .projects-section button:hover a{
   color: ivory;
