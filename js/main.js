@@ -68,7 +68,7 @@ sr2.reveal('.education-year',{interval:200})
 sr2.reveal('.education-school',{interval:200})
 
 /* sr.reveal('.section-title',{delay:100}) */
-sr2.reveal('.project',{delay:100,interval:200})
+sr2.reveal('.project',{delay:200,interval:400})
 
 /* sr.reveal('.section-title',{delay:100}) */
 sr2.reveal('.contact-input',{interval:200})
@@ -99,18 +99,6 @@ else{
     sr3.reveal('.education-grades',{interval:200})
     
 }
-
-
-
-const proj1=document.getElementsByClassName('proj1')
-const proj2=document.getElementsByClassName('.proj2')
-const proj3=document.getElementsByClassName('.proj3')
-const proj4=document.getElementsByClassName('.proj4')
-
-const vid1=document.getElementById('video1')
-const vid2=document.getElementById('video2')
-const vid3=document.getElementById('video3')
-const vid4=document.getElementById('video4')
 
 
 
