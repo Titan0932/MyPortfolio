@@ -484,25 +484,15 @@ section{
 }
 
 
-
-
 .overlay-desc{
  font-size: smaller;
 }
 
 
-.projects-section .Submit-button{
-  display: flex;
-  justify-content: center;
-  justify-self:center;
-  margin-top: 3rem;
-  width: 10rem;
-  height: 2.5rem;
-}
 
-.projects-section .Submit-button a:hover{
-  color: ivory;
-}
+
+
+
 
 /* ---------------------------------------------------------------- */
 
@@ -539,6 +529,7 @@ form{
   color: var(--main-color);
   font-family: 'Oswald',sans-serif;
   
+  
 }
 
 .Submit-button:hover{
@@ -546,8 +537,57 @@ form{
     background-color: var(--main-color);
     transition: 0.5s;
     color: var(--white-black-color);
-
+    animation-name: shake;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
 } 
+
+
+
+@keyframes shake{
+  0%{}
+ 20%{
+     transform: rotate(0.5deg);
+ }
+ 60%{
+     transform:rotate(-1deg)
+ }
+ 80%{
+     transform: rotate(0.5deg);
+ }
+}
+
+.projects-section button{
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-self:center;
+  align-content: center;
+  align-self: center;
+  margin-top: 3rem;
+  width: 45%;
+  height: 2.5rem;
+}
+
+.projects-section button:hover a{
+  color: ivory;
+  transition: 0.5s;
+}
+.projects-section button:hover{
+  width: 60%;
+}
+
+.projects-section .Submit-button a{
+  display: flex;
+  color: var(--main-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-self:center;
+}
+
+
 
 .footer{
   width: 100%;
@@ -731,7 +771,9 @@ form{
       display: none;
     }
 
-    
+    .projects-section button{
+      width: 30%;
+    }
     
 }
 
