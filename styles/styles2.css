@@ -322,7 +322,9 @@ section{
     }
   }
 
-
+.show {
+    left: 0;
+}
   
 @media screen and (min-width: 767.5px){
       :root{
